@@ -1,14 +1,9 @@
 # histor
 
-A Clojure library designed to ... well, that part is up to you.
-
-## Usage
-
-FIXME
+A prototype immutable database built ontop of LevelDB and written in Clojure.
 
 ## License
 
-Copyright © 2014 FIXME
+Copyright © 2014 Gary Fenstamaker
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Distributed under the Apache License, version 2.0.
