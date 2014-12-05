@@ -17,6 +17,7 @@
     <orderEntry type="library" name="Leiningen: clojure-complete:0.2.3" level="project" />
     <orderEntry type="library" name="Leiningen: com.netflix.hystrix/hystrix-clj:1.4.0-RC5" level="project" />
     <orderEntry type="library" name="Leiningen: com.taoensso/nippy:2.7.1" level="project" />
+    <orderEntry type="library" name="Leiningen: com.taoensso/timbre:3.3.1" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/clojure:1.6.0" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/tools.nrepl:0.2.3" level="project" />
     <orderEntry type="library" name="Leiningen: pandect:0.4.1" level="project" />
@@ -33,6 +34,7 @@
     <orderEntry type="library" name="Leiningen: org.clojure/tools.reader:0.8.12" level="project" />
     <orderEntry type="library" name="Leiningen: org.iq80.snappy/snappy:0.3" level="project" />
     <orderEntry type="library" name="Leiningen: org.tukaani/xz:1.5" level="project" />
+    <orderEntry type="library" name="Leiningen: io.aviso/pretty:0.1.12" level="project" />
     <orderEntry type="library" name="Leiningen: org.bouncycastle/bcprov-jdk15on:1.51" level="project" />
     <orderEntry type="library" name="Leiningen: potemkin:0.3.9" level="project" />
     <orderEntry type="library" name="Leiningen: clj-tuple:0.1.5" level="project" />
@@ -49,6 +51,7 @@
     <orderEntry type="library" name="Leiningen: org.clojure/tools.reader:0.8.12" level="project" />
     <orderEntry type="library" name="Leiningen: org.iq80.snappy/snappy:0.3" level="project" />
     <orderEntry type="library" name="Leiningen: org.tukaani/xz:1.5" level="project" />
+    <orderEntry type="library" name="Leiningen: io.aviso/pretty:0.1.12" level="project" />
     <orderEntry type="library" name="Leiningen: commons-lang:2.6" level="project" />
     <orderEntry type="library" name="Leiningen: commons-logging:1.1.1" level="project" />
     <orderEntry type="library" name="Leiningen: org.bouncycastle/bcprov-jdk15on:1.51" level="project" />
