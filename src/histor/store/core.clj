@@ -16,5 +16,8 @@
   (commute state update-in [id] op/del field value))
 
 (defn replay [id]
-  (let [obj (get @state id)]
-    (oplog/replay (:base obj) (:oplog obj))))
+  (let [info (get @state id)
+        obj  (atom (:base info))
+        fop  (atom (:oplog info))
+        rop  (atom [])]
+    (oplog/replay obj fop rop)))

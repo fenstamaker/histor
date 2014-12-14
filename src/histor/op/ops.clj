@@ -1,15 +1,14 @@
-(ns histor.op.ops)
+(ns histor.op.ops
+  (:require [clj-time.core :as time]))
 
-(defn op [operation change]
-  {:op     operation
-   :time  (time/now)
-   :change change})
+(defn- event
+  ([predicate subject] [predicate (time/now)])
+  ([predicate subject object]
+    [predicate subject object (time/now)]))
 
-(defn add [obj-state field value]
-  (update-in obj-state [:oplog] conj (op :add {field value})))
-
-(defn put [obj-state field value]
-  (update-in obj-state [:oplog] conj (op :put {field value})))
-
-(defn del  [obj-state field]
-  (update-in obj-state [:oplog] conj (op :del field)))
+(defn $set  (partial event "$set"))
+(defn $del  (partial event "$del"))
+(defn $inc  (partial event "$inc"))
+(defn $pop  (partial event "$pop"))
+(defn $push (partial event "$push"))
+(defn $pull (partial event "$pull"))
