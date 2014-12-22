@@ -1,6 +1,6 @@
 # histor
 
-A prototype immutable database built ontop of LevelDB and written in Clojure.
+A prototype immutable database built ontop of MongoDB and written in Clojure.
 
 ## License
 
