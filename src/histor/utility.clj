@@ -1,4 +1,5 @@
-(ns histor.utility)
+(ns histor.utility
+  (:import (java.util Collection)))
 
 (defn in?
   "Checks if value is in coll. Returns value if found in coll, else return nil."

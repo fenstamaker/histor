@@ -31,6 +31,11 @@
     (update-in base (map keyword ks) inc)
     (update-in base [(keyword ks)]   inc)))
 
+(defn- $dec [base ks]
+  (if (coll? ks)
+    (update-in base (map keyword ks) dec)
+    (update-in base [(keyword ks)]   dec)))
+
 (defmulti patch (fn [_ op] (first op)))
 (defmethod patch "$set"  [base [_ ks v]] ($set  base ks v))
 (defmethod patch "$del"  [base [_ ks _]] ($del  base ks))
