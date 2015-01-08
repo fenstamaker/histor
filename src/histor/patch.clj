@@ -20,5 +20,11 @@
 (defmethod patch "$del" [base {{:keys [keys value]} :diff}]
   ($del base keys value))
 
+(defmulti  unpatch (fn [_ p] (:op (:diff p))))
+(defmethod unpatch "$set" [base {{:keys [keys value]} :diff}]
+  ($del base keys value))
+(defmethod unpatch "$del" [base {{:keys [keys value]} :diff}]
+  ($set base keys value))
+
 (defn create-patch [diff]
   (Patch. diff (time/now)))
